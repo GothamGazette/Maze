@@ -1,0 +1,27 @@
+<h1>Questions Detail</h1>
+
+<a href="index.php?mj_action=find_by_form&amp;mj_layout=questions_form"><img border=0 alt="find" src="images/find.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=questions_form"><img border=0 alt="new" src="images/new.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=questions_list"><img border=0 alt="list" src="images/list.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=questions_form&amp;mj_id={id}"><img border=0 alt="edit" src="images/edit.gif"></a>
+<a href="index.php?mj_action=dupe&amp;mj_table=questions&amp;mj_id={id}"><img border=0 alt="dupe" src="images/dupe.gif"></a>
+<a href="index.php?mj_action=delete&amp;mj_table=questions&amp;mj_id={id}"><img border=0 alt="delete" src="images/delete.gif"></a>
+<br><br>
+
+<p><span class="label">Question:</span> {title}</p>
+
+<p><i>Level:{level} (to change the level, you need to move this question to another "room" in the maze.)</i>
+
+<p><span class="label">Description:</span> {description}</p>
+
+
+<p><span class="label">Action function:</span> {action_function}</p>
+
+<p><span class="label">Target image:</span> {target_image}</p>
+
+<p><span class="label">Target pos x:</span> {target_pos_x} | <span class="label">Target pos y:</span> {target_pos_y}</p>
+
+<p><span class="label">Target height:</span> {target_height} | <span class="label">Target width:</span> {target_width}</p>
+
+
+{answers}

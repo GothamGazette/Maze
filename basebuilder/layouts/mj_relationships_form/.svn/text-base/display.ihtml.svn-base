@@ -1,0 +1,39 @@
+<h1>Mj Relationships Form</h1>
+
+<form name="mj_relationships_form" action="index.php" method="post">
+<input type="hidden" name="mj_action" value="{mj_action}">
+<input type="hidden" name="mj_layout" value="mj_relationships_form">
+<input type="hidden" name="mj_id" value="{mj_relationship_id}">
+<input type="hidden" name="mj_where" value="{mj_where}">
+<input type="hidden" name="mj_return_layout" value="mj_relationships_detail">
+<input type="hidden" name="mj_return_layout_id" value="{mj_relationship_id}">
+
+{mj_where_display}
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Table 1</td>
+        <td valign="top" class="text"><select name="table1">{table1_options}</select></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Relationship type</td>
+        <td valign="top" class="text"><select name="relationship_type">{relationship_type_options}</select></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Relationship</td>
+        <td valign="top" class="text"><textarea name="relationship" cols="30" rows="5">{relationship}</textarea></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Table 2</td>
+        <td valign="top" class="text"><select name="table2">{table2_options}</select></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Cascade Delete</td>
+        <td valign="top" class="text"><select name="cascade_delete">{cascade_delete_options}</select></td>
+    </tr>
+    <tr>
+        <td><input name="mj_submit" type="submit" value="submit"> <input type="submit" name="mj_cancel" value="cancel"> {mj_or_button}</td>
+    </tr>
+
+</table>
+</form>

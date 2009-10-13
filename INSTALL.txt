@@ -1,0 +1,29 @@
+June 2, 2009
+
+Please read the copyright and license information before you proceed. This Maze code was developed by ForumOne and Gotham Gazette (http://www.gothamgazette.com) to create news games. You can visit some of the games created with the code by visiting http://www.gothamgazette.com/games.
+
+This maze framework is database driven, and you'll need a reasonable interface to MySQL (the game has not been tested with any other database servers) to manage the levels, questions and responses for your maze game.
+
+The very easy install is this:
+* Create your database
+* Import sample.sql
+* Copy "application/config/database.php.sample" to "application/config/database.php" and add your database credentials
+* Edit levels, questions and responses in whatever format suits you.
+
+The odds are, however, that you'll want some sort of scheme for acutally managing the relationships between levels, challenge question and available responses.
+
+We used an excellent and very simple database interface called BaseBuilder (https://sourceforge.net/projects/basebuilder)which was developed by the good folks at Mayfirst People Link (http://www.mayfirst.org). Jamie McClelland, to be precise. If you want to take the BaseBuilder route, you will need to do the following: 
+
+* Create and populate a database to hold your game copy. We'll call it "examplemazeDB" for simplicity. There are many ways to create and populate a database. If you like command lines, here's one way:
+	% CREATE DATABASE exampleMazeDB;
+	% GRANT ALL ON exampleMazeDB TO `someuser`@`somehost` IDENTIFIED BY `somepass`;
+* Install BaseBuilder somewhere on some server.
+* Read the BaseBuilder instructions, which will walk you through adding exampleMazeDB to your BaseBuilder config file.
+* Copy the layouts in "basebuilder_layouts" over to your basebuilder exampleMazeDB/layouts directory. 
+* Pull basebuilder.sql exampleMazeDB. Note that "basebuilder.sql" assumes you've already walked through the Basebuilder setup. It won't create tables, just option lists and relationships.
+
+
+Fun things:
+* look through "application/config/config.php" for configuration options. Note that if you decide to turn on logging here, you'll want to make sure that your web server can actually write to the log directory!
+* look through "application/config/database.php" for configuration options. 
+* look through "application/config/maze.php" for configuration options. 

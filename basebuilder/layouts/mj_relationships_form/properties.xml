@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>*</select>
+		<from>mj_relationships</from>
+	</sql>
+
+	<key_field>mj_relationship_id</key_field>
+	<table>mj_relationships</table>
+
+	<field>
+		<field_name>relationship</field_name>
+		<required>Relationship</required>
+	</field>
+
+	<field>
+		<field_name>table1</field_name>
+		<required>Table 1</required>
+	</field>
+
+	<field>
+		<field_name>table2</field_name>
+		<required>Table 2</required>
+	</field>
+
+	<field>
+		<field_name>cascade_delete</field_name>
+		<default>n</default>
+		<option_list>4</option_list>
+		<option_list_name>cascade_delete_options</option_list_name>
+	</field>
+
+	<field>
+		<field_name>relationship_type</field_name>
+		<option_list>5</option_list>
+		<option_list_name>relationship_type_options</option_list_name>
+	</field>
+
+	<event_code>
+		<on_add>create_table_options.inc.php</on_add>
+		<on_edit>create_table_options.inc.php</on_edit>
+		<on_find>create_table_options.inc.php</on_find>
+	</event_code>
+</properties>

@@ -1,0 +1,36 @@
+<h1>Mj Menus Form</h1>
+
+<form name="mj_menus_form" action="index.php" method="post">
+<input type="hidden" name="mj_action" value="{mj_action}">
+<input type="hidden" name="mj_layout" value="mj_menus_form">
+<input type="hidden" name="mj_id" value="{mj_menu_id}">
+<input type="hidden" name="mj_where" value="{mj_where}">
+<input type="hidden" name="mj_return_layout" value="mj_menus_detail">
+<input type="hidden" name="mj_return_layout_id" value="{mj_menu_id}">
+
+{mj_where_display}
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Menu Type</td>
+        <td valign="top" class="text"><select name="menu_type">{menu_type_options}</select></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Value</td>
+        <td valign="top" class="text"><input type="text" size="40" name="value" value="{value}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Display</td>
+        <td valign="top" class="text"><input type="text" size="40" name="display" value="{display}"></td>
+    </tr>
+    <tr>
+        <td valign="top"><span class="label">Display order</span>*</td>
+        <td valign="top" class="text"><input type="text" size="4" name="display_order" value="{display_order}"></td>
+    </tr>
+
+    <tr>
+        <td><input name="mj_submit" type="submit" value="submit"> <input type="submit" name="mj_cancel" value="cancel"> {mj_or_button}</td>
+    </tr>
+
+</table><br>
+<span class="explanation">*Items will be ordered in the drop down menu according to this number</span><br>

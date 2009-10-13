@@ -1,0 +1,32 @@
+<h1>Mj Users Form</h1>
+
+<form name="mj_users_form" action="index.php" method="post">
+<input type="hidden" name="mj_action" value="{mj_action}">
+<input type="hidden" name="mj_layout" value="mj_users_form">
+<input type="hidden" name="mj_id" value="{mj_user_id}">
+<input type="hidden" name="mj_where" value="{mj_where}">
+<input type="hidden" name="mj_return_layout" value="mj_users_detail">
+<input type="hidden" name="mj_return_layout_id" value="{mj_user_id}">
+
+{mj_where_display}
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Username</td>
+        <td valign="top" class="text"><input type="text" size="40" name="username" value="{username}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Permissions</td>
+        <td valign="top" class="text"><select name="db_username">{permission_options}</select></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Admin</td>
+        <td valign="top" class="text"><select name="admin">{yes_no_options}</select></td>
+    </tr>
+
+    <tr>
+        <td><input name="mj_submit" type="submit" value="submit"> <input type="submit" name="mj_cancel" value="cancel"> {mj_or_button}</td>
+    </tr>
+
+</table>
+</form>

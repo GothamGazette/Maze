@@ -1,0 +1,48 @@
+<h1>Levels Form</h1>
+
+<form name="levels_form" action="index.php" method="post">
+<input type="hidden" name="mj_action" value="{mj_action}">
+<input type="hidden" name="mj_layout" value="levels_form">
+<input type="hidden" name="mj_id" value="{id}">
+<input type="hidden" name="mj_where" value="{mj_where}">
+<input type="hidden" name="mj_return_layout" value="levels_detail">
+<input type="hidden" name="mj_return_layout_id" value="{id}">
+
+{mj_where_display}
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Title</td>
+        <td valign="top"><input type="text" size="40" name="title" value="{title}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Tooltip</td>
+        <td valign="top"><textarea cols="40" rows="6" name="tooltip">{tooltip}</textarea></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Introduction</td>
+        <td valign="top"><textarea cols="40" rows="8" name="introduction">{introduction}</textarea></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Complete text</td>
+        <td valign="top"><textarea cols="40" rows="6" name="complete_text">{complete_text}</textarea></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Fail text</td>
+        <td valign="top"><textarea cols="40" rows="6" name="failed_text">{failed_text}</textarea></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">CSS class</td>
+        <td valign="top"><input type="text" size="40" name="css_class" value="{css_class}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Ordering</td>
+        <td valign="top"><input type="text" size="40" name="ordering" value="{ordering}"></td>
+    </tr>
+
+    <tr>
+        <td><input name="mj_submit" type="submit" value="submit"> <input type="submit" name="mj_cancel" value="cancel"> {mj_or_button}</td>
+    </tr>
+
+</table>
+</form>

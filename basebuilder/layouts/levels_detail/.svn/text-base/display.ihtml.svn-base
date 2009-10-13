@@ -1,0 +1,40 @@
+<h1>Levels Detail</h1>
+
+<a href="index.php?mj_action=find_by_form&amp;mj_layout=levels_form"><img border=0 alt="find" src="images/find.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=levels_form"><img border=0 alt="new" src="images/new.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=levels_list"><img border=0 alt="list" src="images/list.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=levels_form&amp;mj_id={id}"><img border=0 alt="edit" src="images/edit.gif"></a>
+<a href="index.php?mj_action=dupe&amp;mj_table=levels&amp;mj_id={id}"><img border=0 alt="dupe" src="images/dupe.gif"></a>
+<a href="index.php?mj_action=delete&amp;mj_table=levels&amp;mj_id={id}"><img border=0 alt="delete" src="images/delete.gif"></a>
+<br><br>
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Title</td>
+        <td valign="top">{title}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Tooltip</td>
+        <td valign="top">{tooltip}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Introduction</td>
+        <td valign="top">{introduction}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Complete text</td>
+        <td valign="top">{complete_text}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Fail text</td>
+        <td valign="top">{failed_text}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">CSS class</td>
+        <td valign="top">{css_class}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Ordering</td>
+        <td valign="top">{ordering}</td>
+    </tr>
+</table>

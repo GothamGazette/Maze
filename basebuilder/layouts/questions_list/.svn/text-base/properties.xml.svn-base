@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>id,title,description,action_function,target_image</select>
+		<from>questions</from>
+		<limit>50</limit>
+	</sql>
+
+	<key_field>id</key_field>
+	<table>questions</table>
+	<search_fields>id,title,description,action_function,target_image</search_fields>
+	<recordset>on</recordset>
+	<navigation>on</navigation>
+
+	<field>
+		<field_name>id</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>target_pos_x</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>target_pos_y</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>target_height</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>target_width</field_name>
+		<type>integer</type>
+	</field>
+
+
+</properties>

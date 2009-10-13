@@ -1,0 +1,77 @@
+<script type="text/javascript">
+<!--
+	function SetAllCheckBoxes(FormName, FieldName, CheckValue)
+	{
+		if(!document.forms[FormName])
+			return;
+		var objCheckBoxes = document.forms[FormName].elements[FieldName];
+		if(!objCheckBoxes)
+			return;
+		var countCheckBoxes = objCheckBoxes.length;
+		if(!countCheckBoxes)
+			objCheckBoxes.checked = CheckValue;
+		else
+			// set the check value for all check boxes
+			for(var i = 0; i < countCheckBoxes; i++)
+				objCheckBoxes[i].checked = CheckValue;
+	}
+-->
+</script>
+
+<h1>Tiles List</h1>
+
+<a href="index.php?mj_action=find_by_form&amp;mj_layout=tiles_form"><img border=0 alt="find" src="images/find.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=tiles_form"><img border=0 alt="new" src="images/new.gif"></a><br><br>
+
+<table cellpadding="3">
+	<tr>
+		<td>&nbsp;</td>
+		<td class="label">Id
+			<a href="index.php?mj_action=display&amp;mj_layout=tiles_list&amp;mj_order_by=id&amp;mj_order_by_direction=asc">
+			<img border=0 alt="Up Arrow" src="images/up_arrow.gif"></a> 
+			<a href="index.php?mj_action=display&amp;mj_layout=tiles_list&amp;mj_order_by=id&amp;mj_order_by_direction=desc">
+			<img border=0 alt="Down Arrow" src="images/down_arrow.gif"></a>		
+		</td>
+		<td class="label">Category
+			<a href="index.php?mj_action=display&amp;mj_layout=tiles_list&amp;mj_order_by=category&amp;mj_order_by_direction=asc">
+			<img border=0 alt="Up Arrow" src="images/up_arrow.gif"></a> 
+			<a href="index.php?mj_action=display&amp;mj_layout=tiles_list&amp;mj_order_by=category&amp;mj_order_by_direction=desc">
+			<img border=0 alt="Down Arrow" src="images/down_arrow.gif"></a>		
+		</td>
+		<td class="label">Map image
+			<a href="index.php?mj_action=display&amp;mj_layout=tiles_list&amp;mj_order_by=map_image&amp;mj_order_by_direction=asc">
+			<img border=0 alt="Up Arrow" src="images/up_arrow.gif"></a> 
+			<a href="index.php?mj_action=display&amp;mj_layout=tiles_list&amp;mj_order_by=map_image&amp;mj_order_by_direction=desc">
+			<img border=0 alt="Down Arrow" src="images/down_arrow.gif"></a>		
+		</td>
+		<td class="label">Default image
+			<a href="index.php?mj_action=display&amp;mj_layout=tiles_list&amp;mj_order_by=default_image&amp;mj_order_by_direction=asc">
+			<img border=0 alt="Up Arrow" src="images/up_arrow.gif"></a> 
+			<a href="index.php?mj_action=display&amp;mj_layout=tiles_list&amp;mj_order_by=default_image&amp;mj_order_by_direction=desc">
+			<img border=0 alt="Down Arrow" src="images/down_arrow.gif"></a>		
+		</td>
+	</tr> 
+
+<form name="mj_bulk_select" id="mj_bulk_select" action="index.php?mj_action=delete&amp;mj_table=tiles" method="post">
+<!-- BEGIN mj_row -->
+	<tr>
+		<td width="17"><input type="checkbox" name="mj_bulk_select[]" value="{id}"></td>
+       	<td valign="top">{id}</td>
+       	<td valign="top">{category}</td>
+       	<td valign="top">{map_image}</td>
+       	<td valign="top">{default_image}</td>
+
+        <td width="139">
+             <a href="index.php?mj_action=display&amp;mj_layout=tiles_detail&amp;mj_id={id}"><img alt="detail" border="0" src="images/detail.gif"></a>
+             <a href="index.php?mj_action=display&amp;mj_layout=tiles_form&amp;mj_id={id}"><img alt="edit" border="0" src="images/edit.gif"></a>
+             <a href="index.php?mj_action=delete&amp;mj_table=tiles&amp;mj_id={id}"><img alt="delete" border="0" src="images/delete.gif"></a>
+        </td>
+    </tr>
+<!-- END mj_row -->
+
+</table><br>
+
+<a href="" onclick="javascript:SetAllCheckBoxes('mj_bulk_select','mj_bulk_select[]',true); return false;">Check all</a> | 
+<a href="" onclick="javascript:document.mj_bulk_select.submit(); return false;">Delete Checked</a><br>
+</form>
+

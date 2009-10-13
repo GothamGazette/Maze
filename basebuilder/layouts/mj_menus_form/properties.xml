@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>*</select>
+		<from>mj_menus</from>
+	</sql>
+
+	<key_field>mj_menu_id</key_field>
+	<table>mj_menus</table>
+
+	<field>
+		<field_name>display_order</field_name>
+		<type>integer</type>
+		<default>0</default>
+	</field>
+
+	<field>
+		<field_name>menu_type</field_name>
+		<option_list>3</option_list>
+		<option_list_name>menu_type_options</option_list_name>
+	</field>
+
+
+</properties>

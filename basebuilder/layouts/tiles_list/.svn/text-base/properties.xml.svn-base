@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>id,category,map_image,default_image,exit_north</select>
+		<from>tiles</from>
+		<limit>20</limit>
+	</sql>
+
+	<key_field>id</key_field>
+	<table>tiles</table>
+	<search_fields>id,category,map_image,default_image,exit_north</search_fields>
+	<recordset>on</recordset>
+	<navigation>on</navigation>
+
+	<field>
+		<field_name>id</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>exit_north</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>exit_south</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>exit_west</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>exit_east</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>allow_questions</field_name>
+		<type>integer</type>
+	</field>
+
+
+</properties>

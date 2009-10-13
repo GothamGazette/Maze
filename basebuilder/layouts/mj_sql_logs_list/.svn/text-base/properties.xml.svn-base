@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>mj_sql_log_id,stamp,username,log_type,log_table</select>
+		<from>mj_sql_logs</from>
+		<limit>20</limit>
+	</sql>
+
+	<key_field>mj_sql_log_id</key_field>
+	<table>mj_sql_logs</table>
+	<search_fields>mj_sql_log_id,stamp,username,log_type,log_table</search_fields>
+	<recordset>on</recordset>
+	<navigation>on</navigation>
+
+	<field>
+		<field_name>mj_sql_log_id</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>stamp</field_name>
+		<type>timestamp</type>
+	</field>
+
+	<field>
+		<field_name>log_id</field_name>
+		<type>integer</type>
+	</field>
+
+
+</properties>

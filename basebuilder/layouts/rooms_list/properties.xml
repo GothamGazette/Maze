@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>rooms.*, rooms.id AS real_id, tiles.name</select>
+		<from>rooms LEFT JOIN tiles ON (rooms.tile_id = tiles.id)</from>
+		<extra>ORDER BY `level_id` ASC, `question_id` DESC</extra>
+	</sql>
+
+	<key_field>id</key_field>
+	<table>rooms</table>
+	<search_fields>rooms.id, level_id</search_fields>
+	<recordset>on</recordset>
+	<navigation>on</navigation>
+
+	<field>
+		<field_name>id</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>row</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>column</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>tile_id</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>level_id</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>question_id</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>start_point</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>end_point</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>override_exit_north</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>override_exit_south</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>override_exit_east</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>override_exit_west</field_name>
+		<type>integer</type>
+	</field>
+
+
+</properties>

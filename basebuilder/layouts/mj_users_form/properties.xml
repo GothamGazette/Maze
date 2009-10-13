@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>*</select>
+		<from>mj_users</from>
+	</sql>
+
+	<key_field>mj_user_id</key_field>
+	<table>mj_users</table>
+
+	<field>
+		<field_name>username</field_name>
+		<required>Username</required>
+	</field>
+
+	<field>
+		<field_name>admin</field_name>
+		<default>n</default>
+		<option_list>4</option_list>
+		<option_list_name>yes_no_options</option_list_name>
+	</field>
+
+	<event_code>
+		<on_edit>create_db_user_options.inc.php</on_edit>
+		<on_add>create_db_user_options.inc.php</on_add>
+	</event_code>
+</properties>

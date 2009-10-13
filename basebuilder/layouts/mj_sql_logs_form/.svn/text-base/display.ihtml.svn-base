@@ -1,0 +1,48 @@
+<h1>Mj Sql Logs Form</h1>
+
+<form name="mj_sql_logs_form" action="index.php" method="post">
+<input type="hidden" name="mj_action" value="{mj_action}">
+<input type="hidden" name="mj_layout" value="mj_sql_logs_form">
+<input type="hidden" name="mj_id" value="{mj_sql_log_id}">
+<input type="hidden" name="mj_where" value="{mj_where}">
+<input type="hidden" name="mj_return_layout" value="mj_sql_logs_detail">
+<input type="hidden" name="mj_return_layout_id" value="{mj_sql_log_id}">
+
+{mj_where_display}
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Stamp</td>
+        <td valign="top" class="text"><input type="text" size="40" name="stamp" value="{stamp}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Username</td>
+        <td valign="top" class="text"><input type="text" size="40" name="username" value="{username}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Log type</td>
+        <td valign="top" class="text"><input type="text" size="40" name="log_type" value="{log_type}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Log table</td>
+        <td valign="top" class="text"><input type="text" size="40" name="log_table" value="{log_table}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Log id</td>
+        <td valign="top" class="text"><input type="text" size="40" name="log_id" value="{log_id}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Passed sql</td>
+        <td valign="top" class="text"><input type="text" size="40" name="passed_sql" value="{passed_sql}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Revert sql</td>
+        <td valign="top" class="text"><input type="text" size="40" name="revert_sql" value="{revert_sql}"></td>
+    </tr>
+
+    <tr>
+        <td><input name="mj_submit" type="submit" value="submit"> <input type="submit" name="mj_cancel" value="cancel"> {mj_or_button}</td>
+    </tr>
+
+</table>
+</form>

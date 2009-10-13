@@ -1,0 +1,25 @@
+<h1>Mj Users Detail</h1>
+
+<a href="index.php?mj_layout=mj_users_form&amp;mj_action=find_by_form"><img border=0 alt="find" src="images/find.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=mj_users_list"><img border=0 alt="list" src="images/list.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=mj_users_form&amp;mj_id={mj_user_id}"><img border=0 alt="edit" src="images/edit.gif"></a>
+<a href="index.php?mj_action=dupe&amp;mj_table=mj_users&amp;mj_id={mj_user_id}"><img border=0 alt="dupe" src="images/dupe.gif"></a>
+<a href="index.php?mj_action=delete&amp;mj_table=mj_users&amp;mj_id={mj_user_id}"><img border=0 alt="delete" src="images/delete.gif"></a>
+<br><br>
+
+<span class="text"><a href="index.php?mj_action=set_passwords&amp;mj_username={username}">Set or change</a> this person's password.</span><br><br>
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Username</td>
+        <td valign="top" class="text">{username}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Perimssions</td>
+        <td valign="top" class="text">{permissions}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Admin</td>
+        <td valign="top" class="text">{admin}</td>
+    </tr>
+</table>

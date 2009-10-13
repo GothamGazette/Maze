@@ -1,0 +1,78 @@
+<h1>Rooms Form</h1>
+
+Every block in the maze is a "room" -- whether it is a stretch of sidewalk or hallway or a more conventional room where the player is faced with a question. 
+
+<form name="rooms_form" action="index.php" method="post">
+<input type="hidden" name="mj_action" value="{mj_action}">
+<input type="hidden" name="mj_layout" value="rooms_form">
+<input type="hidden" name="mj_id" value="{id}">
+<input type="hidden" name="mj_where" value="{mj_where}">
+<input type="hidden" name="mj_return_layout" value="rooms_detail">
+<input type="hidden" name="mj_return_layout_id" value="{id}">
+
+{mj_where_display}
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Row</td>
+        <td valign="top"><input type="text" size="40" name="row" value="{row}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Column</td>
+        <td valign="top"><input type="text" size="40" name="column" value="{column}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Tile</td>
+        <td valign="top"><select name="tile_id">{tile_list}</select></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Level</td>
+        <td valign="top"><select name="level_id">{level_list}</select></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Image</td>
+        <td valign="top"><input type="text" size="40" name="image" value="{image}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Description</td>
+        <td valign="top"><input type="text" size="40" name="description" value="{description}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Question id</td>
+        <td valign="top"><input type="text" size="40" name="question_id" value="{question_id}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Start point</td>
+        <td valign="top"><input type="text" size="40" name="start_point" value="{start_point}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">End point</td>
+        <td valign="top"><input type="text" size="40" name="end_point" value="{end_point}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Force orientation</td>
+        <td valign="top"><input type="text" size="40" name="force_orientation" value="{force_orientation}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Override exit north</td>
+        <td valign="top"><input type="text" size="40" name="override_exit_north" value="{override_exit_north}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Override exit south</td>
+        <td valign="top"><input type="text" size="40" name="override_exit_south" value="{override_exit_south}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Override exit east</td>
+        <td valign="top"><input type="text" size="40" name="override_exit_east" value="{override_exit_east}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Override exit west</td>
+        <td valign="top"><input type="text" size="40" name="override_exit_west" value="{override_exit_west}"></td>
+    </tr>
+
+    <tr>
+        <td><input name="mj_submit" type="submit" value="submit"> <input type="submit" name="mj_cancel" value="cancel"> {mj_or_button}</td>
+    </tr>
+
+</table>
+</form>

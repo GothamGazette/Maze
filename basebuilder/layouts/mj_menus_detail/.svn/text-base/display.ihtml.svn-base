@@ -1,0 +1,28 @@
+<h1>Mj Menus Detail</h1>
+
+<a href="index.php?mj_action=display&amp;mj_layout=mj_menus_form&amp;mj_action=find_by_form"><img border=0 alt="find" src="images/find.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=mj_menus_form"><img border=0 alt="new" src="images/new.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=mj_menus_list"><img border=0 alt="list" src="images/list.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=mj_menus_form&amp;mj_id={mj_menu_id}"><img border=0 alt="edit" src="images/edit.gif"></a>
+<a href="index.php?mj_action=dupe&amp;mj_table=mj_menus&amp;mj_id={mj_menu_id}"><img border=0 alt="dupe" src="images/dupe.gif"></a>
+<a href="index.php?mj_action=delete&amp;mj_table=mj_menus&amp;mj_id={mj_menu_id}"><img border=0 alt="delete" src="images/delete.gif"></a>
+<br><br>
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Menu Type</td>
+        <td valign="top" class="text">{menu_type}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Value</td>
+        <td valign="top" class="text">{value}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Display</td>
+        <td valign="top" class="text">{display}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Display order</td>
+        <td valign="top" class="text">{display_order}</td>
+    </tr>
+</table>

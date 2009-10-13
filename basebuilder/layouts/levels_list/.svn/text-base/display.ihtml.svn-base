@@ -1,0 +1,77 @@
+<script type="text/javascript">
+<!--
+	function SetAllCheckBoxes(FormName, FieldName, CheckValue)
+	{
+		if(!document.forms[FormName])
+			return;
+		var objCheckBoxes = document.forms[FormName].elements[FieldName];
+		if(!objCheckBoxes)
+			return;
+		var countCheckBoxes = objCheckBoxes.length;
+		if(!countCheckBoxes)
+			objCheckBoxes.checked = CheckValue;
+		else
+			// set the check value for all check boxes
+			for(var i = 0; i < countCheckBoxes; i++)
+				objCheckBoxes[i].checked = CheckValue;
+	}
+-->
+</script>
+
+<h1>Levels List</h1>
+
+<a href="index.php?mj_action=find_by_form&amp;mj_layout=levels_form"><img border=0 alt="find" src="images/find.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=levels_form"><img border=0 alt="new" src="images/new.gif"></a><br><br>
+
+<table cellpadding="3">
+	<tr>
+		<td>&nbsp;</td>
+		<td class="label">Title
+			<a href="index.php?mj_action=display&amp;mj_layout=levels_list&amp;mj_order_by=title&amp;mj_order_by_direction=asc">
+			<img border=0 alt="Up Arrow" src="images/up_arrow.gif"></a> 
+			<a href="index.php?mj_action=display&amp;mj_layout=levels_list&amp;mj_order_by=title&amp;mj_order_by_direction=desc">
+			<img border=0 alt="Down Arrow" src="images/down_arrow.gif"></a>		
+		</td>
+		<td class="label">Tooltip
+			<a href="index.php?mj_action=display&amp;mj_layout=levels_list&amp;mj_order_by=tooltip&amp;mj_order_by_direction=asc">
+			<img border=0 alt="Up Arrow" src="images/up_arrow.gif"></a> 
+			<a href="index.php?mj_action=display&amp;mj_layout=levels_list&amp;mj_order_by=tooltip&amp;mj_order_by_direction=desc">
+			<img border=0 alt="Down Arrow" src="images/down_arrow.gif"></a>		
+		</td>
+		<td class="label">Introduction
+			<a href="index.php?mj_action=display&amp;mj_layout=levels_list&amp;mj_order_by=introduction&amp;mj_order_by_direction=asc">
+			<img border=0 alt="Up Arrow" src="images/up_arrow.gif"></a> 
+			<a href="index.php?mj_action=display&amp;mj_layout=levels_list&amp;mj_order_by=introduction&amp;mj_order_by_direction=desc">
+			<img border=0 alt="Down Arrow" src="images/down_arrow.gif"></a>		
+		</td>
+		<td class="label">Complete text
+			<a href="index.php?mj_action=display&amp;mj_layout=levels_list&amp;mj_order_by=complete_text&amp;mj_order_by_direction=asc">
+			<img border=0 alt="Up Arrow" src="images/up_arrow.gif"></a> 
+			<a href="index.php?mj_action=display&amp;mj_layout=levels_list&amp;mj_order_by=complete_text&amp;mj_order_by_direction=desc">
+			<img border=0 alt="Down Arrow" src="images/down_arrow.gif"></a>		
+		</td>
+	</tr> 
+
+<form name="mj_bulk_select" id="mj_bulk_select" action="index.php?mj_action=delete&amp;mj_table=levels" method="post">
+<!-- BEGIN mj_row -->
+	<tr>
+		<td width="17"><input type="checkbox" name="mj_bulk_select[]" value="{id}"></td>
+       	<td valign="top">{title}</td>
+       	<td valign="top">{tooltip}</td>
+       	<td valign="top">{introduction}</td>
+       	<td valign="top">{complete_text}</td>
+
+        <td width="139">
+             <a href="index.php?mj_action=display&amp;mj_layout=levels_detail&amp;mj_id={id}"><img alt="detail" border="0" src="images/detail.gif"></a>
+             <a href="index.php?mj_action=display&amp;mj_layout=levels_form&amp;mj_id={id}"><img alt="edit" border="0" src="images/edit.gif"></a>
+             <a href="index.php?mj_action=delete&amp;mj_table=levels&amp;mj_id={id}"><img alt="delete" border="0" src="images/delete.gif"></a>
+        </td>
+    </tr>
+<!-- END mj_row -->
+
+</table><br>
+
+<a href="" onclick="javascript:SetAllCheckBoxes('mj_bulk_select','mj_bulk_select[]',true); return false;">Check all</a> | 
+<a href="" onclick="javascript:document.mj_bulk_select.submit(); return false;">Delete Checked</a><br>
+</form>
+

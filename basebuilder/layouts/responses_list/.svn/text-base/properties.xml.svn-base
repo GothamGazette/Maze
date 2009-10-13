@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>id,question_id,title,response,more_information</select>
+		<from>responses</from>
+		<extra>ORDER BY question_id</extra>
+		<limit>25</limit>
+	</sql>
+
+	<key_field>id</key_field>
+	<table>responses</table>
+	<search_fields>id,question_id,title,response,more_information</search_fields>
+	<recordset>on</recordset>
+	<navigation>on</navigation>
+
+	<field>
+		<field_name>id</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>question_id</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>image_pos_x</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>image_pos_y</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>ordering</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>move_ahead</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>points_awarded</field_name>
+		<type>float</type>
+	</field>
+
+	<field>
+		<field_name>schedule_change</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>end_game_immediately</field_name>
+		<type>integer</type>
+	</field>
+
+
+</properties>

@@ -1,0 +1,63 @@
+<h1>Response Detail</h1>
+
+<a href="index.php?mj_action=find_by_form&amp;mj_layout=responses_form"><img border=0 alt="find" src="images/find.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=responses_form"><img border=0 alt="new" src="images/new.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=responses_list"><img border=0 alt="list" src="images/list.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=responses_form&amp;mj_id={id}"><img border=0 alt="edit" src="images/edit.gif"></a>
+<a href="index.php?mj_action=dupe&amp;mj_table=responses&amp;mj_id={id}"><img border=0 alt="dupe" src="images/dupe.gif"></a>
+<a href="index.php?mj_action=delete&amp;mj_table=responses&amp;mj_id={id}"><img border=0 alt="delete" src="images/delete.gif"></a>
+<br><br>
+
+
+Question: {question} (<a href="/database/index.php?mj_action=display&mj_layout=questions_detail&mj_id={question_id}">View</a>  or <a href="/database/index.php?mj_action=display&mj_layout=questions_form&mj_id={question_id}">Edit</a> Question) 
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Title</td>
+        <td valign="top">{title}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Response</td>
+        <td valign="top">{response}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">More information</td>
+        <td valign="top">{more_information}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Image</td>
+        <td valign="top">{image}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Image hover</td>
+        <td valign="top">{image_hover}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Image pos x</td>
+        <td valign="top">{image_pos_x}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Image pos y</td>
+        <td valign="top">{image_pos_y}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Ordering</td>
+        <td valign="top">{ordering}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Move ahead</td>
+        <td valign="top">{move_ahead}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Points awarded</td>
+        <td valign="top">{points_awarded}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Schedule change</td>
+        <td valign="top">{schedule_change}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">End game immediately</td>
+        <td valign="top">{end_game_immediately}</td>
+    </tr>
+</table>

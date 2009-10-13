@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>*</select>
+		<from>mj_users</from>
+	</sql>
+
+	<key_field>mj_user_id</key_field>
+	<table>mj_users</table>
+
+	<event_code>
+		<on_display>display_user_permissions.inc.php</on_display>
+	</event_code>
+</properties>

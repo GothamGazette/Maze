@@ -1,0 +1,60 @@
+<h1>Tiles Form</h1>
+
+<form name="tiles_form" action="index.php" method="post">
+<input type="hidden" name="mj_action" value="{mj_action}">
+<input type="hidden" name="mj_layout" value="tiles_form">
+<input type="hidden" name="mj_id" value="{id}">
+<input type="hidden" name="mj_where" value="{mj_where}">
+<input type="hidden" name="mj_return_layout" value="tiles_detail">
+<input type="hidden" name="mj_return_layout_id" value="{id}">
+
+{mj_where_display}
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Id</td>
+        <td valign="top"><input type="text" size="40" name="id" value="{id}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Category</td>
+        <td valign="top"><input type="text" size="40" name="category" value="{category}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Map image</td>
+        <td valign="top"><input type="text" size="40" name="map_image" value="{map_image}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Default image</td>
+        <td valign="top"><input type="text" size="40" name="default_image" value="{default_image}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Exit north</td>
+        <td valign="top"><input type="text" size="40" name="exit_north" value="{exit_north}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Exit south</td>
+        <td valign="top"><input type="text" size="40" name="exit_south" value="{exit_south}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Exit west</td>
+        <td valign="top"><input type="text" size="40" name="exit_west" value="{exit_west}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Exit east</td>
+        <td valign="top"><input type="text" size="40" name="exit_east" value="{exit_east}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Allow questions</td>
+        <td valign="top"><input type="text" size="40" name="allow_questions" value="{allow_questions}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Name</td>
+        <td valign="top"><input type="text" size="40" name="name" value="{name}"></td>
+    </tr>
+
+    <tr>
+        <td><input name="mj_submit" type="submit" value="submit"> <input type="submit" name="mj_cancel" value="cancel"> {mj_or_button}</td>
+    </tr>
+
+</table>
+</form>

@@ -1,0 +1,32 @@
+<h1>Mj Relationships Detail</h1>
+
+<a href="index.php?mj_action=display&amp;mj_layout=mj_relationships_form&amp;mj_action=find_by_form"><img border=0 alt="find" src="images/find.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=mj_relationships_form"><img border=0 alt="find" src="images/new.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=mj_relationships_list"><img border=0 alt="list" src="images/list.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=mj_relationships_form&amp;mj_id={mj_relationship_id}"><img border=0 alt="edit" src="images/edit.gif"></a>
+<a href="index.php?mj_action=dupe&amp;mj_table=mj_relationships&amp;mj_id={mj_relationship_id}"><img border=0 alt="dupe" src="images/dupe.gif"></a>
+<a href="index.php?mj_action=delete&amp;mj_table=mj_relationships&amp;mj_id={mj_relationship_id}"><img border=0 alt="delete" src="images/delete.gif"></a>
+<br><br>
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Table 1</td>
+        <td valign="top" class="text">{table1}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Relationship type</td>
+        <td valign="top" class="text">{relationship_type}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Relationship</td>
+        <td valign="top" class="text">{relationship}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Table 2</td>
+        <td valign="top" class="text">{table2}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Cascade deletes</td>
+        <td valign="top" class="text">{cascade_delete}</td>
+    </tr>
+</table>

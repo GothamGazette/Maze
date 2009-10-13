@@ -1,0 +1,375 @@
+/**
+ * @package		Gotham Gazette Budget Game
+ * @subpackage	Styles
+ * @copyright	Copyright (C) 2008 Gotham Gazette. All rights reserved.
+ * @license		GNU/GPL, see LICENSE.txt
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * any later version.
+ * 
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ */
+ 
+body,td,th {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+	font-size: 11px;
+}
+
+#wrapper {
+	text-align: center;	
+}
+
+#content {
+	width: 98%;
+	text-align: left;
+	margin: 0 auto;	
+}
+
+/* Rounded corners */
+.b1h,.b2h,.b3h,.b4h,.b2bh,.b3bh,.b4bh {
+	font-size: 1px;
+	overflow: hidden;
+	display: block;
+}
+
+.b1h {
+	height: 1px;
+	background: #aaa;
+	margin: 0 5px;
+}
+
+.b2h,.b2bh {
+	height: 1px;
+	background: #c9c7c7;
+	border-right: 2px solid #aaa;
+	border-left: 2px solid #aaa;
+	margin: 0 3px;
+}
+
+.b3h,.b3bh {
+	height: 1px;
+	background: #c9c7c7;
+	border-right: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	margin: 0 2px;
+}
+
+.b4h,.b4bh {
+	height: 2px;
+	background: #c9c7c7;
+	border-right: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	margin: 0 1px;
+}
+
+.b2bh,.b3bh,.b4bh {
+	background: #ddd;
+}
+
+.b4bh {
+	background: #fff;
+}
+
+.headh {
+	background: url("../images/menubg.jpg");
+	border-right: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+	color: #FFF;
+}
+
+.headh h3 {
+	margin: 0px 10px 0px 10px;
+	padding-bottom: 3px;
+}
+
+.contenth { /*background: #ddd; */
+	border-right: 1px solid #aaa;
+	border-left: 1px solid #aaa;
+}
+
+.contenth div {
+	margin-left: 12px;
+	padding-top: 5px;
+}
+
+.b1,.b2,.b3,.b4 {
+	font-size: 1px;
+	overflow: hidden;
+	display: block;
+}
+
+.b1 {
+	height: 1px;
+	background: #888;
+	margin: 0 5px;
+}
+
+.b2 {
+	height: 1px;
+	/*background:#ddd; */
+	border-right: 2px solid #888;
+	border-left: 2px solid #888;
+	margin: 0 3px;
+}
+
+.b3 {
+	height: 1px;
+	/*background:#ddd; */
+	border-right: 1px solid #888;
+	border-left: 1px solid #888;
+	margin: 0 2px;
+}
+
+.b4 {
+	clear: both;
+	height: 2px;
+	/*background:#ddd; */
+	border-right: 1px solid #888;
+	border-left: 1px solid #888;
+	margin: 0 1px;
+}
+
+.contentb { /*background: #ddd; */
+	border-right: 1px solid #888;
+	border-left: 1px solid #888;
+}
+
+.contentb div {
+	margin-left: 5px;
+}
+
+/* Forms */
+form.cmxform fieldset {
+	border: none;
+	border-top: 1px solid #C9DCA6;
+	margin-bottom: 10px;
+}
+
+form.cmxform legend {
+	padding: 0 2px;
+	font-weight: bold;
+}
+
+form.cmxform label {
+	display: inline-block;
+	line-height: 1.8;
+	vertical-align: top;
+}
+
+form.cmxform ol.fields {
+	margin: 0;
+	padding: 0;
+}
+
+form.cmxform ol.fields li {
+	list-style: none;
+	margin: 0;
+	padding: 7px 10px 7px;
+}
+
+form.cmxform fieldset ol.fields li {
+	/*background: url("../images/admin/formitem-divider.gif") transparent repeat-x;*/
+	border-bottom: 1px solid #C9DCA6;
+}
+
+form.cmxform fieldset {
+	margin: 3px 0 0;
+	border: none;
+	border-top: 1px solid #C9DCA6;
+}
+
+form.cmxform fieldset legend {
+	padding: 0 0 5px;
+	font-weight: normal;
+}
+
+form.cmxform label {
+	display: block;
+	width: auto;
+	text-align: right;
+}
+
+form.cmxform em {
+	font-weight: bold;
+	font-style: normal;
+	color: #f00;
+}
+
+form.cmxform label {
+	width: 150px; /* Width of labels */
+}
+
+form.cmxform fieldset fieldset label {
+	margin-left: 63px; /* Width plus 3 (html space) */
+}
+
+/* Tooldbar */
+#toolbar {
+	margin-top: 3px;
+}
+
+#toolbar a {
+	display: block;
+	height: 32px;
+	width: 32px;
+	float: right;
+	background-position: left 32px;
+	margin: 0 2px 0 2px;
+}
+
+#toolbar a,#toolbar a:link,#toolbar a:hover,#toolbar a:visited {
+	text-decoration: none;
+}
+
+#toolbar a:hover {
+	background-position: top left;
+}
+
+#toolbar .contentb {
+	height: 36px;
+}
+
+#toolbar h2 {
+	float: left;
+	padding: 5px 0 0 10px;
+	margin: 0;
+}
+
+.action_create {
+	background: url("../images/admin/toolbar/icon-32-new.png");
+}
+
+.action_delete {
+	background: url("../images/admin/toolbar/icon-32-delete.png");
+}
+
+.action_edit {
+	background: url("../images/admin/toolbar/icon-32-edit.png");
+}
+
+.action_save {
+	background: url("../images/admin/toolbar/icon-32-save.png");
+}
+
+.action_cancel {
+	background: url("../images/admin/toolbar/icon-32-cancel.png");
+}
+
+/* Menubar */
+#menubar {
+	border: 1px solid #888;
+	float: left;
+	width: 100%;
+	background: url("../images/menubg.jpg") repeat-x;
+}
+
+#menubar a, #menubar a:link, #menubar a:visited, #menubar a:hover {
+	text-decoration: none;
+	color: #FFF;	
+}
+
+#menubar a:hover {
+	color: #AAA;	
+}
+
+#menubar ul,#menubar li {
+	border: 0px none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#menubar li {
+	display: inline;
+	float: left;
+	border-right: 1px solid #D8D8D8;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	position: relative;
+	padding: 5px 5px 5px 5px;
+}
+
+/* Table */
+table.adminlist {
+	width: 100%;
+}
+
+table.adminlist thead th {
+	background: #F0F0F0 none repeat scroll 0%;
+	border-bottom: 1px solid #999999;
+	border-left: 1px solid #FFFFFF;
+	color: #666666;
+	text-align: center;
+}
+
+table.adminlist td,table.adminlist th {
+	padding: 4px;
+}
+
+.form_filters {
+	text-align: right;
+	padding: 5px 0 5px 0;
+}
+
+.form_filters span {
+	padding: 0 3px 0 3px;
+}
+
+body {padding:0; margin:0; height:100%; width:100%;}
+
+/* Overlay */
+#modalOverlay {background-color:#000; cursor:wait;}
+
+/* Container */
+#modalContainer {height:500px; width:700px; left:50%; top:5%; margin-left:-300px; background-color:#fff; border:3px solid #ccc; }
+#modalContainer a.modalCloseImg {background:url(../images/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-18px; cursor:pointer;}
+#modalContainer #basicModalContent {padding:8px;}
+.modalData {
+   overflow: auto;
+   width: 100%;
+   height: 100%;
+}
+
+/* Login */
+#login_wrapper {
+	text-align: center;
+}
+
+#login_box {
+	width: 400px;
+	text-align: left;
+	margin: 20px auto;
+}
+
+/* Dump */
+div.level {
+	border: 1px solid #000;
+	margin-bottom: 1em;
+}
+
+div.level, div.level div {
+	padding: 5px;
+}
+
+div.level table {
+	width: 100%;
+}
+
+div.question {
+	margin-left: 10%;
+	background: #CCCCCC;
+	border: 1px solid #000; 
+}
+
+div.response {
+	margin-left: 10%;
+	background: #999999;
+	border: 1px solid #000;
+}

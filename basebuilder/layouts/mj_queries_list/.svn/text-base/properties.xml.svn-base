@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>*</select>
+		<from>mj_queries</from>
+	</sql>
+
+	<key_field>mj_query_id</key_field>
+	<table>mj_queries</table>
+	<search_fields>mj_query_id,friendly_name,sql_statement</search_fields>
+
+
+</properties>

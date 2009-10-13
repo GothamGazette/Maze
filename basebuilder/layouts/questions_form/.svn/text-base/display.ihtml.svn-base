@@ -1,0 +1,52 @@
+<h1>Questions Form</h1>
+
+<form name="questions_form" action="index.php" method="post">
+<input type="hidden" name="mj_action" value="{mj_action}">
+<input type="hidden" name="mj_layout" value="questions_form">
+<input type="hidden" name="mj_id" value="{id}">
+<input type="hidden" name="mj_where" value="{mj_where}">
+<input type="hidden" name="mj_return_layout" value="questions_detail">
+<input type="hidden" name="mj_return_layout_id" value="{id}">
+
+{mj_where_display}
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Title</td>
+        <td valign="top"><textarea name="title" cols=45 rows=6 >{title}</textarea></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Description</td>
+        <td valign="top"><textarea name="description" cols=45 rows=6 >{description}</textarea></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Action function</td>
+        <td valign="top"><input type="text" size="40" name="action_function" value="{action_function}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Target image</td>
+        <td valign="top"><input type="text" size="40" name="target_image" value="{target_image}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Target pos x</td>
+        <td valign="top"><input type="text" size="40" name="target_pos_x" value="{target_pos_x}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Target pos y</td>
+        <td valign="top"><input type="text" size="40" name="target_pos_y" value="{target_pos_y}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Target height</td>
+        <td valign="top"><input type="text" size="40" name="target_height" value="{target_height}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Target width</td>
+        <td valign="top"><input type="text" size="40" name="target_width" value="{target_width}"></td>
+    </tr>
+
+    <tr>
+        <td><input name="mj_submit" type="submit" value="submit"> <input type="submit" name="mj_cancel" value="cancel"> {mj_or_button}</td>
+    </tr>
+
+</table>
+</form>

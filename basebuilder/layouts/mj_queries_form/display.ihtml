@@ -1,0 +1,30 @@
+<h1>Mj Queries Form</span></h1>
+
+Searches that are saved with this form can be re-run at any time by clicking on the &quot;Advanced Search&quot; link under &quot;User Options&quot; and selecting your search from the drop down menu.<br><br>
+
+<form name="mj_queries_form" action="index.php" method="post">
+<input type="hidden" name="mj_action" value="{mj_action}">
+<input type="hidden" name="mj_layout" value="mj_queries_form">
+<input type="hidden" name="mj_id" value="{mj_query_id}">
+<input type="hidden" name="mj_where" value="{mj_where}">
+<input type="hidden" name="mj_return_layout" value="mj_queries_detail">
+<input type="hidden" name="mj_return_layout_id" value="{mj_query_id}">
+
+{mj_where_display}
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Friendly name</td>
+        <td valign="top" class="text"><input type="text" size="40" name="friendly_name" value="{friendly_name}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Sql statement</td>
+        <td valign="top" class="text"><textarea cols="40" rows="10" name="sql_statement">{sql_statement}</textarea></td>
+    </tr>
+
+    <tr>
+        <td><input name="mj_submit" type="submit" value="submit"> <input type="submit" name="mj_cancel" value="cancel"> {mj_or_button}</td>
+    </tr>
+
+</table>
+</form>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>*</select>
+		<from>mj_relationships</from>
+	</sql>
+
+	<key_field>mj_relationship_id</key_field>
+	<table>mj_relationships</table>
+	<search_fields>mj_relationship_id,table1,relationship,table2</search_fields>
+
+
+</properties>

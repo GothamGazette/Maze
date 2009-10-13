@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>*</select>
+		<from>mj_lists</from>
+	</sql>
+
+	<key_field>mj_list_id</key_field>
+	<table>mj_lists</table>
+
+	<field>
+		<field_name>source_type</field_name>
+		<required>Source Type</required>
+		<option_list>2</option_list>
+		<option_list_name>list_sql_options</option_list_name>
+	</field>
+
+	<field>
+		<field_name>friendly_name</field_name>
+		<required>Friendly Name</required>
+	</field>
+
+	<field>
+		<field_name>select_type</field_name>
+		<default>single</default>
+		<option_list>1</option_list>
+		<option_list_name>single_multiple_options</option_list_name>
+	</field>
+
+
+</properties>

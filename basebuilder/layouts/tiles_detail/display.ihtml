@@ -1,0 +1,52 @@
+<h1>Tiles Detail</h1>
+
+<a href="index.php?mj_action=find_by_form&amp;mj_layout=tiles_form"><img border=0 alt="find" src="images/find.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=tiles_form"><img border=0 alt="new" src="images/new.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=tiles_list"><img border=0 alt="list" src="images/list.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=tiles_form&amp;mj_id={id}"><img border=0 alt="edit" src="images/edit.gif"></a>
+<a href="index.php?mj_action=dupe&amp;mj_table=tiles&amp;mj_id={id}"><img border=0 alt="dupe" src="images/dupe.gif"></a>
+<a href="index.php?mj_action=delete&amp;mj_table=tiles&amp;mj_id={id}"><img border=0 alt="delete" src="images/delete.gif"></a>
+<br><br>
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Id</td>
+        <td valign="top">{id}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Category</td>
+        <td valign="top">{category}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Map image</td>
+        <td valign="top">{map_image}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Default image</td>
+        <td valign="top">{default_image}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Exit north</td>
+        <td valign="top">{exit_north}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Exit south</td>
+        <td valign="top">{exit_south}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Exit west</td>
+        <td valign="top">{exit_west}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Exit east</td>
+        <td valign="top">{exit_east}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Allow questions</td>
+        <td valign="top">{allow_questions}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Name</td>
+        <td valign="top">{name}</td>
+    </tr>
+</table>

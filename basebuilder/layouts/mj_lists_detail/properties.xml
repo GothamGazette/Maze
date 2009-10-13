@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>*</select>
+		<from>mj_lists</from>
+	</sql>
+
+	<key_field>mj_list_id</key_field>
+	<table>mj_lists</table>
+
+
+</properties>

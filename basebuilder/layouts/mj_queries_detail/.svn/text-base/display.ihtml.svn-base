@@ -1,0 +1,21 @@
+<span class="header1">Mj Queries Detail</span><br><br>
+
+<a href="index.php?mj_layout=mj_queries_form&amp;mj_action=find_by_form"><img border=0 alt="find" src="images/find.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=mj_queries_list"><img border=0 alt="list" src="images/list.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=mj_queries_form&amp;mj_id={mj_query_id}"><img border=0 alt="edit" src="images/edit.gif"></a>
+<a href="index.php?mj_action=dupe&amp;mj_table=mj_queries&amp;mj_id={mj_query_id}"><img border=0 alt="dupe" src="images/dupe.gif"></a>
+<a href="index.php?mj_action=delete&amp;mj_table=mj_queries&amp;mj_id={mj_query_id}"><img border=0 alt="delete" src="images/delete.gif"></a>
+<br><br>
+
+<span class="text"><a href="index.php?mj_action=execute_sql&amp;mj_sql_id={mj_query_id}">Execute</a></span><br><br>
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Friendly name</td>
+        <td valign="top" class="text">{friendly_name}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Sql statement</td>
+        <td valign="top" class="text">{sql_statement}</td>
+    </tr>
+</table>

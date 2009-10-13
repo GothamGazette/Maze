@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>*</select>
+		<from>mj_sql_logs</from>
+	</sql>
+
+	<key_field>mj_sql_log_id</key_field>
+	<table>mj_sql_logs</table>
+	<navigation>on</navigation>
+	<multiple_select_delimiter>::</multiple_select_delimiter>
+
+	<field>
+		<field_name>mj_sql_log_id</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>stamp</field_name>
+		<type>timestamp</type>
+	</field>
+
+	<field>
+		<field_name>log_id</field_name>
+		<type>integer</type>
+	</field>
+
+
+</properties>

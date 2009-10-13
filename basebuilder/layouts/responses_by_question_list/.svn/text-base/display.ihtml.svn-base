@@ -1,0 +1,68 @@
+<script type="text/javascript">
+<!--
+	function SetAllCheckBoxes(FormName, FieldName, CheckValue)
+	{
+		if(!document.forms[FormName])
+			return;
+		var objCheckBoxes = document.forms[FormName].elements[FieldName];
+		if(!objCheckBoxes)
+			return;
+		var countCheckBoxes = objCheckBoxes.length;
+		if(!countCheckBoxes)
+			objCheckBoxes.checked = CheckValue;
+		else
+			// set the check value for all check boxes
+			for(var i = 0; i < countCheckBoxes; i++)
+				objCheckBoxes[i].checked = CheckValue;
+	}
+-->
+</script>
+
+<h2>Available Answers</h2>
+
+<a href="index.php?mj_action=display&amp;mj_layout=responses_form&amp;question_id={question_id}">Add new Responses</a><br><br>
+
+<table cellpadding="3">
+	<tr>
+		<td>&nbsp;</td>
+		<td class="label">Question</td>
+		<td class="label">Response</td>
+		<td class="label">Images</td>
+		<td class="label">Coord</td>
+		<td class="label">Score</td>
+		<td class="label">Notes/Questions</td>
+
+	</tr> 
+
+<form name="mj_bulk_select" id="mj_bulk_select" action="index.php?mj_action=delete&amp;mj_table=responses" method="post">
+<!-- BEGIN mj_row -->
+	<tr>
+		<td valign="top"><input type="checkbox" name="mj_bulk_select[]" value="{id}"><br />
+             <a href="index.php?mj_action=display&amp;mj_layout=responses_detail&amp;mj_id={id}"><img alt="detail" border="0" src="images/detail.gif"></a><br />
+             <a href="index.php?mj_action=display&amp;mj_layout=responses_form&amp;mj_id={id}"><img alt="edit" border="0" src="images/edit.gif"></a><br />
+             <a href="index.php?mj_action=delete&amp;mj_table=responses&amp;mj_id={id}&amp;mj_return_layout=questions_detail&amp;mj_return_layout_id={question_id}"><img alt="delete" border="0" src="images/delete.gif"></a>
+        </td>
+       	<td valign="top">{title}</td>
+       	<td valign="top">{response}</td>
+       	<td valign="top">{image} or {image_hover}</td>
+	<td>{image_pos_x}, {image_pos_y}</td>
+	<td>Proceed: {move_ahead}<br />
+	 Time Lost: {schedule_change}
+	 Points: {points_awarded}<br />
+	 <nobr>Game Over: {end_game_immediately}</nobr><br />
+	 </td>
+       	<td valign="top">{more_information}</td>
+
+    </tr>
+<!-- END mj_row -->
+
+</table>
+<br>
+
+<input type="hidden" name="mj_return_layout" value="questions_detail">
+<input type="hidden" name="mj_return_layout_id" value="{question_id}">
+
+<a href="" onclick="javascript:SetAllCheckBoxes('mj_bulk_select','mj_bulk_select[]',true); return false;">Check all</a> | 
+<a href="" onclick="javascript:document.mj_bulk_select.submit(); return false;">Delete Checked</a><br>
+</form>
+

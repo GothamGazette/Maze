@@ -1,0 +1,43 @@
+<h1>Mj Sql Logs Detail</h1>
+
+<a href="index.php?mj_action=find_by_form&amp;mj_layout=mj_sql_logs_form"><img border=0 alt="find" src="images/find.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=mj_sql_logs_list"><img border=0 alt="list" src="images/list.gif"></a>
+<a href="index.php?mj_action=delete&amp;mj_table=mj_sql_logs&amp;mj_id={mj_sql_log_id}"><img border=0 alt="delete" src="images/delete.gif"></a>
+<br><br>
+
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Timestamp</td>
+        <td valign="top" class="text">{stamp}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Username</td>
+        <td valign="top" class="text">{username}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Log type</td>
+        <td valign="top" class="text">{log_type}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Log table</td>
+        <td valign="top" class="text">{log_table}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Log id</td>
+        <td valign="top" class="text">{log_id}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Passed sql</td>
+        <td valign="top" class="text">{passed_sql}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Revert sql</td>
+        <td valign="top" class="text">{revert_sql}</td>
+    </tr>
+</table>
+<br>
+
+<a href="index.php?mj_action=execute_sql&amp;mj_sql_statement={revert_sql_encoded}">Rollback</a> this record to it's original value.<br><br>
+
+<span class="explanation">NOTE: Often one record will depend on another record, so rolling back a single record will not always have the expected result. Please use this function with caution!</span>

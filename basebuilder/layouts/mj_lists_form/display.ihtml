@@ -1,0 +1,94 @@
+<h1>Mj Lists Form</h1>
+
+
+
+<form name="mj_lists_form" action="index.php" method="post">
+
+<input type="hidden" name="mj_action" value="{mj_action}">
+
+<input type="hidden" name="mj_layout" value="mj_lists_form">
+
+<input type="hidden" name="mj_id" value="{mj_list_id}">
+
+<input type="hidden" name="mj_where" value="{mj_where}">
+
+<input type="hidden" name="mj_return_layout" value="mj_lists_detail">
+<input type="hidden" name="mj_return_layout_id" value="{mj_list_id}">
+
+
+
+{mj_where_display}
+
+
+
+<table border="0" cellpadding="3" width="550">
+
+    <tr>
+
+        <td valign="top"><span class="label">Friendly name</span></td>
+
+    </tr>
+
+    <tr>
+
+        <td valign="top" class="text"><input type="text" size="40" name="friendly_name" value="{friendly_name}"></td>
+
+    </tr>
+
+    <tr>
+
+        <td valign="top"><span class="label">Select type</span> <span class="explanation">(Choose whether you want the user to be able to select only one item from the list - single, or multiple items from the list - multiple.)</span></td>
+
+    </tr>
+
+    <tr>
+
+        <td valign="top" class="text"><select name="select_type">{single_multiple_options}</select></td>
+
+    </tr>
+
+    <tr>
+
+        <td valign="top"><span class="label">Source type</span> <span class="explanation">(Indiciate &quot;list&quot; if you want to type in the values, or &quot;sql&quot; if you want the values automatically generated from a table.)</span></td>
+
+    </tr>
+
+    <tr>
+
+        <td valign="top" class="text"><select name="source_type">{list_sql_options}</select></td>
+
+    </tr>
+
+    <tr>
+
+        <td valign="top"><span class="label">Source</span> <span class="explanation">(If you chose &quot;list&quot; in the above option, then type your values below. Each value pair should be on a seperate line. Seperate the value to be inserted into the database from the value displayed using &quot;::&quot;. For example:<br><br>y::yes<br>n::no<br>m::maybe.<br><br>If you chose &quot;sql&quot; in the above option, type a sql statement below.)</span></td>
+
+    </tr>
+
+    <tr>
+
+        <td valign="top" class="text"><textarea cols="60" rows="10" name="source">{source}</textarea></td>
+
+    </tr>
+
+    <tr>
+
+        <td valign="top"><span class="label">Extra option</span> <span class="explanation">If you chose &quot;sql&quot; in the option above, you can specify a single extra option to be included in the list. Seperate the value to be inserted into the database from the value displayed using &quot;::&quot;. For example: ::--Choose One--.</td>
+
+    </tr>
+
+    <tr>
+
+        <td valign="top" class="text"><input type="text" size="40" name="extra_option" value="{extra_option}"></td>
+
+    </tr>
+
+
+
+    <tr>
+
+        <td><input name="mj_submit" type="submit" value="submit"> <input type="submit" name="mj_cancel" value="cancel"> {mj_or_button}</td>
+
+    </tr>
+
+</table>

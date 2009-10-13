@@ -1,0 +1,31 @@
+<h1>Mj Lists Detail</h1>
+
+<a href="index.php?mj_action=display&amp;mj_layout=mj_lists_form&amp;mj_action=find_by_form"><img border=0 alt="find" src="images/find.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=mj_lists_list"><img border=0 alt="list" src="images/list.gif"></a>
+<a href="index.php?mj_action=display&amp;mj_layout=mj_lists_form&amp;mj_id={mj_list_id}"><img border=0 alt="edit" src="images/edit.gif"></a>
+<a href="index.php?mj_action=dupe&amp;mj_table=mj_lists&amp;mj_id={mj_list_id}"><img border=0 alt="dupe" src="images/dupe.gif"></a>
+<a href="index.php?mj_action=delete&amp;mj_table=mj_lists&amp;mj_id={mj_list_id}"><img border=0 alt="delete" src="images/delete.gif"></a>
+<br><br>
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Friendly name</td>
+        <td valign="top" class="text">{friendly_name}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Select type</td>
+        <td valign="top" class="text">{select_type}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Source type</td>
+        <td valign="top" class="text">{source_type}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Source</td>
+        <td valign="top" class="text">{source}</td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Extra option</td>
+        <td valign="top" class="text">{extra_option}</td>
+    </tr>
+</table>

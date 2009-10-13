@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>*</select>
+		<from>questions</from>
+	</sql>
+
+	<key_field>id</key_field>
+	<table>questions</table>
+	<navigation>on</navigation>
+	<multiple_select_delimiter>::</multiple_select_delimiter>
+
+	<field>
+		<field_name>id</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>target_pos_x</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>target_pos_y</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>target_height</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>target_width</field_name>
+		<type>integer</type>
+	</field>
+
+
+</properties>

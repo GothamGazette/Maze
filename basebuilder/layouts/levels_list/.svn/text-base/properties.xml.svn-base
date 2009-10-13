@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>id,title,tooltip,introduction,complete_text</select>
+		<from>levels</from>
+		<limit>20</limit>
+	</sql>
+
+	<key_field>id</key_field>
+	<table>levels</table>
+	<search_fields>id,title,tooltip,introduction,complete_text</search_fields>
+	<recordset>on</recordset>
+	<navigation>on</navigation>
+
+	<field>
+		<field_name>id</field_name>
+		<type>integer</type>
+	</field>
+
+	<field>
+		<field_name>ordering</field_name>
+		<type>integer</type>
+	</field>
+
+
+</properties>

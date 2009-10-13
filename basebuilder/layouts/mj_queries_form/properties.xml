@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<properties>
+
+	<sql>
+		<select>*</select>
+		<from>mj_queries</from>
+	</sql>
+
+	<key_field>mj_query_id</key_field>
+	<table>mj_queries</table>
+
+	<event_code>
+		<on_add>insert_registered_query.inc.php</on_add>
+	</event_code>
+
+</properties>

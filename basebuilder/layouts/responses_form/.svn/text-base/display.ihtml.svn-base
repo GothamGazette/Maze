@@ -1,0 +1,72 @@
+<h1>Responses Form</h1>
+
+<form name="responses_form" action="index.php" method="post">
+<input type="hidden" name="mj_action" value="{mj_action}">
+<input type="hidden" name="mj_layout" value="responses_form">
+<input type="hidden" name="mj_id" value="{id}">
+<input type="hidden" name="mj_where" value="{mj_where}">
+<input type="hidden" name="mj_return_layout" value="responses_detail">
+<input type="hidden" name="mj_return_layout_id" value="{id}">
+
+{mj_where_display}
+
+<table border="0" cellpadding="3">
+    <tr>
+        <td valign="top" class="label">Question id</td>
+        <td valign="top"><input type="text" size="40" name="question_id" value="{question_id}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Title</td>
+        <td valign="top"><input type="text" size="40" name="title" value="{title}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Response</td>
+        <td valign="top"><textarea name="response" cols="40" rows="6">{response}</textarea></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">More information</td>
+        <td valign="top"><input type="text" size="40" name="more_information" value="{more_information}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Image</td>
+        <td valign="top"><input type="text" size="40" name="image" value="{image}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Image hover</td>
+        <td valign="top"><input type="text" size="40" name="image_hover" value="{image_hover}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Image pos x</td>
+        <td valign="top"><input type="text" size="40" name="image_pos_x" value="{image_pos_x}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Image pos y</td>
+        <td valign="top"><input type="text" size="40" name="image_pos_y" value="{image_pos_y}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Ordering</td>
+        <td valign="top"><input type="text" size="40" name="ordering" value="{ordering}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Move ahead</td>
+        <td valign="top"><input type="text" size="40" name="move_ahead" value="{move_ahead}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Points awarded</td>
+        <td valign="top"><input type="text" size="40" name="points_awarded" value="{points_awarded}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">Schedule change</td>
+        <td valign="top"><input type="text" size="40" name="schedule_change" value="{schedule_change}"></td>
+    </tr>
+    <tr>
+        <td valign="top" class="label">End game immediately</td>
+        <td valign="top"><input type="text" size="40" name="end_game_immediately" value="{end_game_immediately}"></td>
+    </tr>
+
+    <tr>
+        <td><input name="mj_submit" type="submit" value="submit"> <input type="submit" name="mj_cancel" value="cancel"> {mj_or_button}</td>
+    </tr>
+
+</table>
+</form>
